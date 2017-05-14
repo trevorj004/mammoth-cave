@@ -1,0 +1,10 @@
+.navbar-brand img {
+    width: 40px;
+    display: inline-block !important;
+    position: relative;
+    top: 5px;
+    margin-top: -15px;
+}
+canvas {
+    border:1px dashed #999;
+}
