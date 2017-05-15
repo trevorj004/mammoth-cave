@@ -5,6 +5,18 @@
     top: 5px;
     margin-top: -15px;
 }
-canvas {
-    border:1px dashed #999;
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.carousel {
+    width: 510px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.content {
+    margin: 0 15px;
 }
