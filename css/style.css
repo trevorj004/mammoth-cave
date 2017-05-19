@@ -20,8 +20,3 @@
 .content {
     margin: 0 15px;
 }
-.breadcrumb {all:black; border: 0px solid black; border-radius: 0px; display: block;}
-.breadcrumb li{font-size: 14px;}
-.breadcrumb a:hover{color: black;}
-.breadcrumb>.active {color: black;}
-.breadcrumb>li+li:before{color: black; content: "\002F\00a0";}
