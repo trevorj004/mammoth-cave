@@ -20,3 +20,22 @@
 .content {
     margin: 0 15px;
 }
+div.fill-screen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10;
+    bottom: 15;
+    text-align: center;
+}
+
+img.make-it-fit {
+    max-width: 99%;
+    max-height: 99%;
+}
+.strong {color:white}
+
+.preppy {
+  color: white;
+  font-weight: 900;
+}
