@@ -11,10 +11,20 @@
 }
 
 .carousel {
-    width: 510px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .carousel, .carousel img {
+        max-height: 229px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel, .carousel img {
+        max-height: 300px;
+    }
 }
 
 .content {
