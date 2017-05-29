@@ -30,3 +30,13 @@
 .content {
     margin: 0 15px;
 }
+
+.h1-pic {
+    height: 28px;
+    vertical-align: baseline;
+}
+
+.demo {
+    font-size: 36pt;
+
+}

@@ -49,6 +49,40 @@
     </nav>
 <div class="content">
     <!-- Content Goes HERE -->
+    
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 5, 2017 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
     <div class="hidden-sm hidden-xs">
   <canvas id="myCanvas"></canvas>
     </div>
@@ -70,7 +104,6 @@
     <p><a href="http://denmarkljensen.blogspot.com/2016/02/">Family Reunion 2017</a></p><!-- Content Ends HERE -->
   <!-- Content Ends HERE -->
 </div>   
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -86,9 +119,10 @@ var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 var bluefield = [199, 100, 22.9];
 
+
 var myName = "Welcome";
-var letterColors = [bluefield, purple, blue];
-var bubbleShape = "square";
+var letterColors = [green, blue, bluefield];
+var bubbleShape = "circle";
 
 drawName(myName, letterColors);
 bounceName();
