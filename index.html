@@ -47,92 +47,96 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-<div class="content">
-    <!-- Content Goes HERE -->
-    <h3>
-<p id="demo"></p>
+    <div class="content">
+        <!-- Content Goes HERE -->
+        <h3>
+            <p id="demo"></p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("July 5, 2017 15:00:00 -5").getTime();
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("July 5, 2017 15:00:00 -5").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+                // Update the count down every 1 second
+                var x = setInterval(function () {
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s (until check-in at Jellystone)";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = '<a href="ItsHere.html">It&#39;s Here</a>';
-    }
-}, 1000);
-</script> 
-    </h3>
-    <div class="hidden-sm hidden-xs">
-  <canvas id="myCanvas"></canvas>
+                    // Get todays date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s (until check-in at Jellystone)";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = '<a href="ItsHere.html">It&#39;s Here</a>';
+                    }
+                }, 1000);
+
+            </script>
+        </h3>
+        <div class="hidden-sm hidden-xs">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <h1 class="visible-xs visible-sm">Welcome</h1>
+
+        <h4>Welcome to the Jensen Family Reunion 2017 Mammoth Cave official webpage. Throughout this webpage you will find information
+            about food, directions, activities, and other parts of this trip. This page will be used as an announcements
+            page for updates. Scroll down to see recent updates.</h4>
+        <p> <a href="https://www.purposegames.com/game/mammoth-cave-national-park-quiz">Click here to play a game about Mammoth Cave</a></p>
+        <i class="fa fa-globe fa-lg"></i>
+        <p><a href="http://denmarkljensen.blogspot.com/2017/06/new-family-reunion-website.html">New Family Reunion Website</a></p>
+        <i class="fa fa-map-signs"></i>
+        <p><a href="http://denmarkljensen.blogspot.com/2017/05/food-planning.html">Food Planning</a></p>
+        <i class="fa fa-bed fa-lg"></i>
+        <p><a href="http://denmarkljensen.blogspot.com/2017/05/mammoth-cave-tours-time-to-book.html">Mammoth Cave Tours - Time to Book!!</a></p>
+
+
+        <i class="fa fa-calendar fa-lg"></i>
+        <p><a href="http://denmarkljensen.blogspot.com/2017/01/2017-family-reunion.html">2017 Family Reunion</a></p>
+        <i class="fa fa-road fa-lg"></i>
+
+        <p><a href="http://denmarkljensen.blogspot.com/2016/06/as-it-is-getting-closer-to-time-when-we.html">Family Reunion 2017 Planning</a></p>
+        <i class="fa fa-map fa-lg"></i>
+
+        <p><a href="http://denmarkljensen.blogspot.com/2016/02/family-reunion-2017.html">Family Reunion 2017</a></p>
+
+        <!-- Content Ends HERE -->
     </div>
-    <h1 class="visible-xs visible-sm">Welcome</h1>
-
-<h4>Welcome to the Jensen Family Reunion 2017 Mammoth Cave official webpage. Throughout this webpage you will find information about food, directions, activities, and other parts of this trip. This page will be used as an announcements page for updates. Scroll down to see recent updates.</h4>
-   <p> <a href="https://www.purposegames.com/game/mammoth-cave-national-park-quiz">Click here to play a game about Mammoth Cave</a></p>
-<i class="fa fa-globe fa-lg"></i>
-<p><a href="http://denmarkljensen.blogspot.com/2017/06/new-family-reunion-website.html">New Family Reunion Website</a></p>
-<i class="fa fa-map-signs"></i>
-     <p><a href="http://denmarkljensen.blogspot.com/2017/05/food-planning.html">Food Planning</a></p>
-     <i class="fa fa-bed fa-lg"></i>
-<p><a href="http://denmarkljensen.blogspot.com/2017/05/mammoth-cave-tours-time-to-book.html">Mammoth Cave Tours - Time to Book!!</a></p>
-
-
-<i class="fa fa-calendar fa-lg"></i>
-<p><a href="http://denmarkljensen.blogspot.com/2017/01/2017-family-reunion.html">2017 Family Reunion</a></p>
-<i class="fa fa-road fa-lg"></i>
-
-<p><a href="http://denmarkljensen.blogspot.com/2016/06/as-it-is-getting-closer-to-time-when-we.html">Family Reunion 2017 Planning</a></p>
-<i class="fa fa-map fa-lg"></i>
-
-    <p><a href="http://denmarkljensen.blogspot.com/2016/02/family-reunion-2017.html">Family Reunion 2017</a></p>
-
-  <!-- Content Ends HERE -->
-</div>   
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
-<script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
-<script>
-    var red = [359, 100, 29.8];
-var orange = [40, 100, 60];
-var green = [75, 100, 40];
-var blue = [196, 77, 55];
-var purple = [280, 50, 60];
-var bluefield = [199, 100, 22.9];
+    <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    <script>
+        var red = [359, 100, 29.8];
+        var orange = [40, 100, 60];
+        var green = [75, 100, 40];
+        var blue = [196, 77, 55];
+        var purple = [280, 50, 60];
+        var bluefield = [199, 100, 22.9];
 
 
-var myName = "Welcome";
-var letterColors = [green, blue, bluefield];
-var bubbleShape = "circle";
+        var myName = "Welcome";
+        var letterColors = [green, blue, bluefield];
+        var bubbleShape = "circle";
 
-drawName(myName, letterColors);
-bounceName();
-bounceBubbles();
-</script>
+        drawName(myName, letterColors);
+        bounceName();
+        bounceBubbles();
+
+    </script>
 </body>
 
 </html>
