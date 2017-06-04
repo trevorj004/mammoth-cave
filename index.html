@@ -54,7 +54,7 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("July 5, 2017 15:00:00").getTime();
+var countDownDate = new Date("July 5, 2017 15:00:00 -5").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -73,15 +73,15 @@ var x = setInterval(function() {
     
     // Output the result in an element with id="demo"
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    + minutes + "m " + seconds + "s (until check-in at Jellystone)";
     
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = '<a href="ItsHere.html">It&#39;s Here</a>';
     }
 }, 1000);
-</script> (until check-in at Jellystone)
+</script> 
     </h3>
     <div class="hidden-sm hidden-xs">
   <canvas id="myCanvas"></canvas>
